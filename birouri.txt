@@ -1,0 +1,3 @@
+0;Iasi;1
+1;Cluj;1
+2;Bucuresti;2

@@ -1,0 +1,4 @@
+Laura;15;0
+Sorina;18;2
+Iosif;20;1
+Gyuri;80;2

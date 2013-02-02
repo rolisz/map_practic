@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="brep" class="Repository.BirouRepository"></bean>
+	<bean id="prep" class="Repository.ParticipantRepository"></bean>
+	<bean id="contr" class="Controller.Controller">
+		<constructor-arg ref="brep"></constructor-arg>
+		<constructor-arg ref="prep"></constructor-arg></bean>
+	<bean id="main" class="Main">
+		<property name="prep" ref="prep"></property>
+		<property name="brep" ref="brep"></property>
+		<property name="contr" ref="contr"></property></bean>
+
+
+</beans>
